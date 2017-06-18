@@ -1,0 +1,9 @@
+<div class="container">
+  <a href="/">首页</a>
+  <%if(isLogin){%>
+  <a href="/logout">退出</a>
+  <%}else{%>
+  <a href="/login">登录</a>
+  <a href="/register">注册</a>
+  <%}%>
+</div>

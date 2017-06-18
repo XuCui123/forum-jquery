@@ -1,0 +1,5 @@
+<div class="J_topic">
+  <div class="title"><%=topic.title%></div>
+  <span class="time"><%=timeAgo(topic.createdAt)%></span>
+  <div class="content"><%=topic.content%></a>
+</div>

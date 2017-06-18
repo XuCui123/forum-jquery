@@ -1,0 +1,30 @@
+{
+  "name": "forum-jquery",
+  "version": "1.0.0",
+  "description": "forum jquery",
+  "main": "index.js",
+  "entry": {
+    "index": "./src/index.js"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XuCui123/forum-jquery.git"
+  },
+  "keywords": [
+    "forum",
+    "jquery"
+  ],
+  "author": "XuCui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XuCui123/forum-jquery/issues"
+  },
+  "homepage": "https://github.com/XuCui123/forum-jquery#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "path-to-regexp": "^1.7.0"
+  }
+}

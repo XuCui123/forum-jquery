@@ -1,0 +1,22 @@
+<div class="reply-list">
+  <%for(var i=0;i < list.length;i++){var item=list[i];%>
+  <div class="reply-item">
+    <div class="reply-title">
+      <a href="/user/<%=item.id%>"><%=item.user.nickname%></a>
+      <span class="time"><%=timeAgo(item.createdAt)%></span>
+    </div>
+    <div class="reply-content">
+      <p><%=item.content%></p>
+    </div>
+  </div>
+  <%}%>
+</div>
+<div class="J_replyPager">
+  <%for(var i=1;i<=ceil(count/size);i++){%>
+    <%if(page==i){%>
+    <span><%=i%></span>
+    <%}else{%>
+    <a href="javascript:;" data-page="<%=i%>"><%=i%></a>
+    <%}%>
+  <%}%>
+</div>

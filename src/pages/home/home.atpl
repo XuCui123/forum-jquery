@@ -1,0 +1,18 @@
+<div class="topic-list">
+  <%for(var i=0;i < list.length;i++){var item=list[i];%>
+  <div class="topic-item">
+    <div class="user"><%=item.user.nickname%></div>
+    <a href="/topic/<%=item.id%>" class="title"><%=item.title%></a>
+    <span class="time"><%=timeAgo(item.createdAt)%></span>
+  </div>
+  <%}%>
+</div>
+<div class="J_topicPager">
+  <%for(var i=1;i<=ceil(count/size);i++){%>
+    <%if(page==i){%>
+    <span><%=i%></span>
+    <%}else{%>
+    <a href="javascript:;" data-page="<%=i%>"><%=i%></a>
+    <%}%>
+  <%}%>
+</div>
